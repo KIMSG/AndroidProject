@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void showCommentListActivity(ListView listView) {
         Intent intent = new Intent(getApplicationContext(), CommentListActivity.class);
-//        intent.putExtra("listView", (Parcelable) listView);
+
         processIntent(intent);
         startActivityForResult(intent, 101);
     }
@@ -201,9 +201,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void processIntent(Intent intent) {
         if (intent != null){
-//            float rating = intent.getFloatExtra("rating", 0.0f);
-
-//            listView.setRating(rating);
+            float rating = intent.getFloatExtra("rating", 0.0f);
         }
     }
 
