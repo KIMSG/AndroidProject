@@ -50,7 +50,7 @@ public class CommentWriteActivity extends AppCompatActivity {
         intent.putExtra("contents", contents);
         intent.putExtra("rating", rating);
 
-        setResult(Activity.RESULT_OK, intent);
+        setResult(Activity.RESULT_CANCELED, intent);
 
         finish();
     }

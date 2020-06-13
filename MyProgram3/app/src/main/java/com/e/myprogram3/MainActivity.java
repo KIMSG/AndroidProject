@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -83,6 +84,15 @@ public class MainActivity extends AppCompatActivity {
         adapter.addItem(new CommentItem("woojoo***", R.drawable.user1, "16분전",5 ,"추천합니다.","60"));
         adapter.addItem(new CommentItem("lown***", R.drawable.user1, "120분전",4 ,"좋은 소개 입니다..","30"));
         listView.setAdapter(adapter);
+
+//        listView.setOnTouchListener(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(View v, MotionEvent event) {
+//                ViewGroup scrollView = null;
+//                scrollView.requestDisallowInterceptTouchEvent(true);
+//                return false;
+//            }
+//        });
 
         ratingBar = (RatingBar) findViewById(R.id.ratingBar);
 

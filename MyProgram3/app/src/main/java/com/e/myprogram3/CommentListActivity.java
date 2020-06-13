@@ -87,6 +87,7 @@ public class CommentListActivity extends AppCompatActivity {
     }
 
     private void showCommentWriteActivity() {
+        super.onBackPressed();
         Intent intent = new Intent(getApplicationContext(), CommentWriteActivity.class);
         startActivityForResult(intent, 101);
     }
